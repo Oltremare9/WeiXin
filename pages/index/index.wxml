@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="top">
+    <view class='search'>
+      <icon type="search" size="18"></icon>
+      <input type='text' placeholder='输入你想要的内容' confirm-type='search'></input>
+    </view>
+    <view class="activities_list">
+      <block wx:for="{{activities}}" wx:key="">
+        <view class="activity">
+          <image src='{{item.url}}'></image>
+          <text>{{item.name}}</text>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class="projects_container">
+    <block wx:for="{{projects}}" wx:key="">
+      <view class="project" bindtap="toConcrete" id="{{index}}">
+        <image src="../image/basketball.png"></image>
+        <view>
+          <text style="padding-top:0">{{projects[index].name}}\n</text>
+          <text style="font-size:25rpx">{{projects[index].tag}}\n</text>
+          <text style="font-size:25rpx">地点:{{projects[index].location}}\n</text>
+          <text style="font-size:20rpx;">活动时间:{{projects[index].time}}</text>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

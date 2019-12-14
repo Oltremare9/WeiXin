@@ -1,0 +1,74 @@
+/**index.wxss**/
+
+/* 顶部样式 */
+
+.top {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 400rpx;
+  background-color: #f7ab3e;
+}
+
+/* 搜索框样式 */
+
+.search {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 95%;
+  height: 60rpx;
+  background-color: white;
+  border: 1rpx solid whitesmoke;
+  border-radius: 8rpx;
+}
+
+/* 活动框样式 */
+
+.activities_list {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8rpx;
+  width: 95%;
+  background-color: white;
+  height: 300rpx;
+}
+
+/* 活动样式 */
+.activity{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 活动图片样式 */
+.activity image{
+  width:3em;
+  height: 3em;
+}
+
+/* 项目列表样式 */
+.projects_container{
+  background-color: #e6e6e7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 项目样式 */
+.project{
+  margin-top: 15rpx;
+  margin-bottom: 10rpx;
+  width: 95%;
+  display: flex;
+  background-color: white;
+  justify-content: flex-start;
+  border-radius: 8rpx;
+}
+.project image{
+  width: 4em;
+  height: 4em;
+}

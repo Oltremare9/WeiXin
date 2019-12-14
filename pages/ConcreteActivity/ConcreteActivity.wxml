@@ -1,0 +1,59 @@
+<!--pages/ConcreteProject1/ConcreteProject1.wxml-->
+<view class="container">
+  <view class="project_info">
+    <view class="project">
+      <image src="{{project.url}}"></image>
+      <view>
+        <text style="padding-top:0">{{project.name}}\n</text>
+        <text style="font-size:25rpx">类型:{{project.category}}\n</text>
+        <text style="font-size:20rpx;">活动时间:{{project.time}}\n</text>
+        <text style="font-size:25rpx">地点:{{project.location}}\n</text>
+      </view>
+    </view>
+    <view class="line" />
+  </view>
+  <view style="border: 4rpx solid whitesmoke;box-shadow: 0px 0px  10px 3px whitesmoke;border-radius: 8rpx;">
+    <view class="member_tag">
+      <view class="tag_left">
+        <text>参加成员</text>
+      </view>
+    </view>
+    <view style="width:100%;height:3em;background-color:white">
+      <view class="members">
+        <block wx:for="{{members}}" wx:key="">
+          <view class="icon_container">
+            <image src="{{item.url}}">
+            </image>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+
+  <view class="comment">
+  </view>
+  <view class="line" />
+  <block wx:for="{{comments}}" wx:key="">
+    <view class="comment">
+      <view class="author">
+        <text style="font-size:20rpx">{{comments[index].author}}\n</text>
+      </view>
+      <view class="content">
+        <text style="font-size:25rpx;top:5rpx;">{{comments[index].content}}\n\n</text>
+      </view>
+    </view>
+  </block>
+  
+  <view class="commit-comment">
+  <textarea class="comment-content"></textarea>
+  <view class="bottom">
+    <form>
+      <view class="remark">
+        <view class="join">
+          <button>提交评论</button>
+        </view>
+      </view>
+    </form>
+  </view>
+  </view>
+</view>
