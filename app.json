@@ -1,13 +1,12 @@
 {
   "pages": [
-    "pages/ConcreteActivity/ConcreteActivity",
-    "pages/foot/foot",
     "pages/index/index",
     "pages/ConcreteProject/ConcreteProject",
+    
     "pages/add/add",
+    "pages/foot/foot",
     "pages/mine/mine",
     "pages/logs/logs"
-    
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -15,20 +14,24 @@
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
   },
-  "tabBar": {
+
+  "tabBar":{
+    "selectedColor": "#ffffff",
+    "backgroundColor":"#f7ab3e",
     "list": [
       {
         "pagePath": "pages/index/index",
         "text": "首页",
-        "iconPath": "pages/image/index.png",
-        "selectedIconPath": "pages/image/index.png"
+        "iconPath":"pages/image/index.png",
+        "selectedIconPath":"pages/image/index.png"
       },
       {
         "pagePath": "pages/add/add",
         "text": "新增",
         "iconPath": "pages/image/add.png",
         "selectedIconPath": "pages/image/add.png"
-      },
+      }
+      ,
       {
         "pagePath": "pages/foot/foot",
         "text": "足迹",
