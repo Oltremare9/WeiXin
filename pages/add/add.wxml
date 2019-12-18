@@ -1,2 +1,89 @@
-<!--pages/add/add.wxml-->
-<text>pages/add/add.wxml</text>
+<!--pages/issue/issue.wxml-->
+<form bindsubmit="formSubmit">
+<!-- 第一部分：输入活动名称和地点 -->
+  <view class="input-section">
+    <view class="info">
+      <text>活动名称</text>
+    </view>   
+    <view>
+      <input class="input-name" placeholder=" 单行输入" type="text"/>
+    </view>   
+  </view>
+  <view class="input-section">
+    <view class="info">
+      <text>活动地点</text>
+    </view>   
+    <view>
+      <input class="input-name" placeholder=" 单行输入" type="text"/>
+    </view>   
+  </view>
+  <!-- 第二部分：选择人数和活动类型 -->
+  <view class="select">
+    <view class="num">
+      <view class="info">
+        <text>选择人数</text>
+      </view>   
+      <picker bindchange="bindNumChange" value="{{index1}}" range="{{number}}">
+        <view class="picker">{{number[index1]}}</view>
+      </picker>
+    </view>
+    <view class="type">
+      <view class="info">
+        <text>活动类型</text>
+      </view>   
+     <picker bindchange="bindTypeChange" value="{{index2}}" range="{{type}}">
+      <view class="picker">{{type[index2]}}</view>
+     </picker>
+    </view>
+  </view>
+  <!-- 第三部分：选择活动日期，活动开始时间，结束时间 -->
+  <view>
+    <!-- 选择活动日期 -->
+    <view class="date">
+      <view class="info">
+        <text>选择活动日期</text>
+      </view>
+      <picker mode="date" bindchange="bindDateChange" value="{{date}}" start="2019-12-13" end="2020-1-15">
+        <view class="picker-date">{{date}}</view>
+      </picker>
+    </view>
+    <!-- 选择活动开始时间，结束时间 -->
+    <view class="select">
+      <!-- 选择活动开始时间 -->
+      <view class="time">
+        <view class="info">
+          <text>活动开始时间</text>
+        </view>   
+        <picker mode="time" bindchange="bindTimeChange" value="{{time}}" start="00:01" end="24:00">
+          <view class="picker">{{time}}</view>
+        </picker>
+      </view>
+      
+      <!-- 选择活动时长 -->
+      <view class="time">
+        <view class="info">
+          <text>选择活动时长</text>
+        </view>   
+        <picker bindchange="bindLongChange" value="{{index3}}" range="{{long}}">
+          <view class="picker">{{long[index3]}}</view>
+        </picker>
+      </view>
+    </view>
+  </view>
+  <!-- 第四部分：多行备注 -->
+  <view class="textarea">
+    <view class="info">
+          <text>备注</text>
+    </view>
+    <view class="remark">
+      <textarea class="input" placeholder="备注："/>
+    </view>
+  </view>
+  <!-- 第五部分：发布按钮 -->
+  <view>
+    <button bindTap="gotoPage" class="issue" form-type="submit" style="opacity: {{opacity}};color: white; background-color: #ff8719;">发布</button>
+  </view>
+</form>
+
+
+

@@ -1,1 +1,83 @@
-/* pages/add/add.wxss */
+/* pages/issue/issue.wxss */
+.input-section{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+
+}
+.input-name{
+  width: 500rpx;
+  height: 60rpx; 
+  border: 1px solid lightgray;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.choice{
+  display: flex;
+  flex-direction: column;
+}
+.info{
+  font-size: 30rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  margin-bottom: 30rpx;
+  margin-top: 30rpx;
+}
+.select{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.picker{
+  color: olive;
+  width: 250rpx;
+  height: 60rpx; 
+  border: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+  padding-left: 30rpx;
+}
+
+.date{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+.picker-date{
+    color: olive;
+  width: 500rpx;
+  height: 60rpx; 
+  border: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+  padding-left: 30rpx;
+}
+.textarea{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+.remark{
+  width:650rpx;
+  height:100rpx;
+  border: 1px solid lightgray;
+  align-items: center;
+}
+
+.input{
+  color: olive;
+  padding-left: 30rpx;
+  margin-top: 6rpx;
+}
+
+.issue{
+  margin-top: 40rpx;
+  width: 180rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  font-size: 30rpx;
+}
+
+

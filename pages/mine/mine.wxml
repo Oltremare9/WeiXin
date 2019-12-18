@@ -1,2 +1,33 @@
-<!--pages/mine/mine.wxml-->
-<text>pages/mine/mine.wxml</text>
+<!--pages/my/my.wxml-->
+<view>
+  <!-- 第一部分：头像和昵称 -->
+  <view class="information" style="box-shadow:0px 2px 3px 1px #d9d7d4;">
+    <image class="head" src="/images/head.jpeg"></image>
+    <view class="name-section">
+      <view class="nickname">oltremare</view>
+      <view class="name">实名：王二狗</view>
+    </view>
+  </view>
+  <!-- 第二部分：参与活动次数 -->
+  <view class="total" style="box-shadow:0px 2px 3px 1px #d9d7d4;">
+    <view class="text1">参与活动次数</view>
+    <view class="text2">6</view>
+    <view class="text3">多多益善哦！</view>
+  </view>
+  <!-- 第三部分 --> 
+  <view class="set-section" style="box-shadow:0px 0px 1px 1px #d9d7d4;">
+    <image class="image" src="/images/ren-2.png"></image>
+    <view class="line">实名认证： 已认证</view>
+    <image class="arrow1" src="/images/jiantou-3.png"></image>
+  </view>
+   <view class="set-section" style="box-shadow:0px 0px 1px 1px #d9d7d4;">
+    <image class="image1" src="/images/shezhi-2.png"></image>
+    <view class="line">设置</view>
+    <image class="arrow2" src="/images/jiantou-3.png"></image>
+  </view>
+   <view class="set-section" style="box-shadow:0px 0px 1px 1px #d9d7d4;">
+    <image class="image" src="/images/icon_logout.png"></image>
+    <view class="line">退出登录</view>
+  </view>
+  
+</view>

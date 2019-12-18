@@ -9,7 +9,7 @@ Page({
    */
   data: {
     activities: [{ url: '../image/basketball.png', name: '篮球' }, { url: '../image/swim.png', name: '游泳' }, { url: '../image/exercise.png', name: '健身' }, { url: '../image/more.png', name: '更多' }],
-    projects: [{ url: '', name: '一起流汗', tag: '健身 社交 室内', location: '南京大学体育馆', time: '2019.12.12' }, { url: '', name: '一起流汗', tag: '健身 社交 室内', location: '南京大学体育馆', time: '2019.12.12' }, { url: '', name: '一起流汗', tag: '健身 社交 室内', location: '南京大学体育馆', time: '2019.12.12' }, { url: '', name: '一起流汗', tag: '健身 社交 室内', location: '南京大学体育馆', time: '2019.12.12' }]
+    projects: [{ url: '', name: '一起流汗', tag: '健身 社交 室内', location: '南京大学体育馆', time: '2019.12.12' }, { url: '', name: '一起流汗', tag: '健身 社交 室内', location: '南京大学体育馆', time: '2019.12.12' }, { url: '', name: '一起流汗', tag: '健身 社交 室内', location: '南京大学体育馆', time: '2019.12.12' }]
   },
 
   toConcrete:function(e){

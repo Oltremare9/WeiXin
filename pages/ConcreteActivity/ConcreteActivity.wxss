@@ -1,4 +1,4 @@
-/* 容器样式 */
+/* pages/ConcreteActivity/ConcreteActivity.wxss *//* 容器样式 */
 .container{
   margin-left: 4%;
   margin-right: 4%;
@@ -90,29 +90,7 @@
 
 /* 提醒样式 */
 
-.remind {
-  border: 4rpx solid whitesmoke;
-  box-shadow: 0px 0px  10px 3px whitesmoke;
-  border-radius: 8rpx;
-  margin-top: 5rpx;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background-color: white;
-}
 
-/* 广告展示框样式 */
-
-.advertisement {
-  margin-top: 20rpx;
-}
-
-swiper-item {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
 
 /* 底部样式 */
 .join{
@@ -129,4 +107,25 @@ swiper-item {
   zoom: .7;
   border-radius: 8rpx;
   
+}
+.comment{
+  border: 4rpx solid whitesmoke;
+  box-shadow: 0px 0px  10px 3px whitesmoke;
+  border-radius: 8rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+.commit-comment{
+  flex-direction: column;
+  justify-content: center;
+  border: 4rpx solid whitesmoke;
+    position: fixed;
+    bottom: 30rpx;
+    width: 80%;
+}
+.bottom{
+  background-color: #f7ab3e;
+  border: 4rpx solid whitesmoke;
 }
