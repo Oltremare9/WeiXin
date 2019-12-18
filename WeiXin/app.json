@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/foot/foot",
+    
+    "pages/ConcreteProject/ConcreteProject",
+    "pages/ConcreteActivity/ConcreteActivity",
+    "pages/add/add",
+    "pages/mine/mine",
+    "pages/logs/logs"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f7ab3e",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/image/index.png",
+        "selectedIconPath": "pages/image/index.png"
+      },
+      {
+        "pagePath": "pages/add/add",
+        "text": "新增",
+        "iconPath": "pages/image/add.png",
+        "selectedIconPath": "pages/image/add.png"
+      },
+      {
+        "pagePath": "pages/foot/foot",
+        "text": "足迹",
+        "iconPath": "pages/image/foot.png",
+        "selectedIconPath": "pages/image/foot.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "pages/image/mine.png",
+        "selectedIconPath": "pages/image/mine.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
